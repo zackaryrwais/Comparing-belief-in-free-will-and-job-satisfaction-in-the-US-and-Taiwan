@@ -18,6 +18,7 @@ format: pdf
 
 library(tidyverse)
 library(palmerpenguins)
+library(ggplot2)
 ```
 
 
@@ -46,7 +47,7 @@ Free will is a topic that has different meaning depending on the city or country
 Table_I <- data.frame(
   Job_satisfaction_T1 = c(5.64, 1.18),
   Job_satisfaction_T2 = c(5.74, 0.99),
-  Belief_free_will = c(0.49, 3.99)
+  Belief_free_will = c(3.99, 0.49)
 )
 
 # Name the rows
@@ -64,8 +65,8 @@ And also planes (@fig-planes). (You can change the height and width, but don't w
 ```{r}
 
 Table_II <- data.frame(
-  Job_satisfaction = c(5.64, 1.18),
-  Belief_free_will = c(0.49, 3.99)
+  Job_satisfaction = c(5.29, 1.22),
+  Belief_free_will = c(5.28, 0.84)
 )
 
 
@@ -74,7 +75,30 @@ rownames(Table_II) <- c("Mean", "Standard Deviation")
 
 print(Table_II)
 ```
+```{r}
 
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+
+# Sample data
+data <- data.frame(
+  Country = rep(c("US", "Taiwan T1", "Taiwan T2"), each = 2),
+  Value = c(5.28, 5.29, 3.99, 5.64, 3.99, 5.74), # Sample values ranging from 0 to 10
+  Type = rep(c("Belief in Free Will", "Job Satisfaction"), 3)
+)
+
+
+# Plotting
+ggplot(data, aes(x = Country, y = Value, fill = Type)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_y_continuous(limits = c(0, 10)) +
+  labs(x = "Country", y = "Scale") +
+  theme_minimal() +
+  scale_fill_manual(values = c("Belief in Free Will" = "blue", "Job Satisfaction" = "red")) # Custom colors for the bars
+
+
+```
 Talk way more about it. 
 
 
