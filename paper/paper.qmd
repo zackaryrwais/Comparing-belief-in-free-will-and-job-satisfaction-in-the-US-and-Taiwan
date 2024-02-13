@@ -8,6 +8,7 @@ date: 2024/02/12
 date-format: long
 abstract: "Free will and job satisfaction are some terminologies that you do not hear often in the same sentence; however go hand in hand with one another. This paper replicates the data compiled from three studies, the first one being in regards to Taiwanese real estate agents, the second study being American online labor workers, and the third study looking into the subject fo free will and job satisfaction on an international level. We will also be applying secondary research to aid our understanding of this topic, and how cultural norms affect the responses we receive. As this is an issue that every individual thinks about prior to entering an industry, or accepting a job, we found it to be a topic to be extremely beneficial to us as we are ending our time in university."
 format: pdf
+output-dir: "./output"
 
 ---
 
