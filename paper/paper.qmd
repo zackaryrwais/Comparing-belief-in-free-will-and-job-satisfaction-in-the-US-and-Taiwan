@@ -27,7 +27,7 @@ library(palmerpenguins)
 
 You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
 
-The remainder of this paper is structured as follows. @sec-data....
+The remainder of this aper is structured as follows. @sec-data....
 
 
 
