@@ -1,16 +1,14 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Comparing belief in free will and job satisfaction in the US and Taiwan "
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
-date: today
+  - Ismael Gharbi
+  - Zackary Wais
+Github Link: "Code and data are available at: https://github.com/zackaryrwais/starter_folder/tree/main."
+date: 2024/02/12
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "Free will and job satisfaction are some terminologies that you do not hear often in the same sentence; however go hand in hand with one another. This paper replicates the data compiled from three studies, the first one being in regards to Taiwanese real estate agents, the second study being American online labor workers, and the third study looking into the subject fo free will and job satisfaction on an international level. We will also be applying secondary research to aid our understanding of this topic, and how cultural norms affect the responses we receive. As this is an issue that every individual thinks about prior to entering an industry, or accepting a job, we found it to be a topic to be extremely beneficial to us as we are ending our time in university."
 format: pdf
-number-sections: true
-bibliography: references.b
+
 ---
 
 ```{r}
@@ -25,15 +23,23 @@ library(palmerpenguins)
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
+Free will is a topic that has different meaning depending on the city or country we are in. For us in North America, the idea of free will is more apparent according to a survey concluding that 60% of Americans believe that they have free will (Scientific American 2015). With recent innovations in fields such as psychology, philosophy, and science, the idea of free will has shifted from what the exact term is, to free will’s affects on human beings. This goes to show the neurological connections with free will, specifically that the way we view free will, will later affect our a variety of our daily decision making (Frontiers 2016).
+	There are a variety of factors that shift the outcomes of free will, and in this paper we will take three different studies to help our understanding of free will. The first study we are looking at takes 252 Taiwanese real-estate agents over a three month period, while examining their job satisfaction with free will. The second study takes 137 American workers that are on an online labor market and conduct the same study over a six month period. And the final and largest study takes a sample of 14,062 employees from 16 different countries  and examined their country level moderators. 
+	This subject has different meanings in every country, when taking a look at countries outside of North America such as Asia and other western countries, they have different beliefs of free will on average, specifically that it is not as important as North Americans view it (Frontiers 2017). At its core, free will is to what extent or ability we can our own decisions and have autonomy, as well as the outcomes and consequences of our actions. Studies have shown that when free will is present, the population is happier, more positive, and live better, and contrary for countries that do not have free will (Alquist, Ainsworth, & Baumeister, 2013). Now this idea directly relates to careers, as it is something that individuals spend a majority of their time doing, and would prefer to be happier doing it rather than not happy. When you have autonomy and free will in your career, you immediately have a higher job satisfaction, as your neurological decision making is seen in a much clearer manner. 
 
-The remainder of this aper is structured as follows. @sec-data....
 
 
 
 # Data {#sec-data}
 
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+2.1 Source
+	The paper we have used for replication is from the list of Gilad Feldman papers offered form the course, specifically titled Agency Beliefs Over Time and Across Cultures: Free Will Beliefs Predict Higher Job Satisfaction, written by Gilad Feldman, Jiing-Lih Farh, and Kin Fai Ellick Wong. This paper dives into the meanings of free will, and takes several studies examining its correlation with job satisfaction as the primary factor, but also includes ideas in regards to psychological well being and international perspectives. Our reproduction seeks to focus on two different findings made from the original paper and apply a holistic lens to it. 
+	The two claims we are focusing on are as follows: (1) Is there a positive or negative relationship among free will and job satisfaction? (2) Something about age 
+2.2 Methodology 
+	This paper is replicating the data that was originally studied for the (2018) paper Agency Beliefs Over Time and Across Cultures: Free Will Beliefs Predict Higher Job Satisfaction. The first study takes Taiwanese real estate agent’s job satisfaction into account and conducted the study in 54 branch offices of a public real estate company based in Taiwan. They then proceeded by distributing the surveys to agents in each of the branch in two different times, once every 3 months for a total of 6 months of data. They ended up with 293 surveys to review for study #1. For study number #2, the paper looks into the Amazon Mechanical Turk (MTurk) American Worker’s Job Satisfaction. The study was conducted by in two different sections, in which they were able to survey a total of 209 American participants. After this initial study was done, the same group was invited to conduct a follow up survey six months later, and took in responses over a 15 day period. Out of the 209 initial participants, only 137 of them conducted the follow up survey. And for the final study, contrary to the first two where they directly went to a group and surveyed them; they surveyors used previous data from the World Value Survey (WVS) which was data conducted between 1990 and 2008, looking into the participants views on free will, job satisfaction, and job autonomy. Over these 18 years the survey received data 257,597 people, and focused on 14,062 participants as they answered questions directly related to our research. Although the total survey took into account people from over 40 countries, for our focus we looked at individuals from 16 specific countries. 
+2.3 Features 
+	The studies conducted each had their specific variables conducted. For the first study, the survey takes into account age, gender, social desirability of the job, job satisfaction after the first wave of surveys, job satisfaction after the second wave of surveys, and their beliefs on free will. The age range for this study was between 22 to 49 years old, and only took into account male and female genders. The second study primarily took free will and job satisfaction into account. 
+
 
 ```{r}
 #| label: fig-bills
