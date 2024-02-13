@@ -41,10 +41,41 @@ Free will is a topic that has different meaning depending on the city or country
 	This paper is replicating the data that was originally studied for the (2018) paper Agency Beliefs Over Time and Across Cultures: Free Will Beliefs Predict Higher Job Satisfaction. The first study takes Taiwanese real estate agent’s job satisfaction into account and conducted the study in 54 branch offices of a public real estate company based in Taiwan. They then proceeded by distributing the surveys to agents in each of the branch in two different times, once every 3 months for a total of 6 months of data. They ended up with 293 surveys to review for study #1. For study number #2, the paper looks into the Amazon Mechanical Turk (MTurk) American Worker’s Job Satisfaction. The study was conducted by in two different sections, in which they were able to survey a total of 209 American participants. After this initial study was done, the same group was invited to conduct a follow up survey six months later, and took in responses over a 15 day period. Out of the 209 initial participants, only 137 of them conducted the follow up survey. And for the final study, contrary to the first two where they directly went to a group and surveyed them; they surveyors used previous data from the World Value Survey (WVS) which was data conducted between 1990 and 2008, looking into the participants views on free will, job satisfaction, and job autonomy. Over these 18 years the survey received data 257,597 people, and focused on 14,062 participants as they answered questions directly related to our research. Although the total survey took into account people from over 40 countries, for our focus we looked at individuals from 16 specific countries. 
 2.3 Features 
 	The studies conducted each had their specific variables conducted. For the first study, the survey takes into account age, gender, social desirability of the job, job satisfaction after the first wave of surveys, job satisfaction after the second wave of surveys, and their beliefs on free will. The age range for this study was between 22 to 49 years old, and only took into account male and female genders. The second study primarily took free will and job satisfaction into account. 
+	
 
+
+# Results
+
+Data from Study 1 were used to show the relative amount of belief in free will of the average Taiwanese real estate agents and how much are they satisfied with their job across two times within 6 months with the same sample.
+We extracted the responses from the survey and extracted the responses to the questions : "From the scale of 0 to 10, How much do you agree with this statement: I have free will"and "From the scale of 0 to 10, How much do you agree with this statement: I am satisfied with my job" at Time one and two.
+In Figure 1, we calculated and showed the means and standard deviation of the job satisfaction both times and belief in free will values.
+response patterns along a consistent y-axis.
+Dancygier et al. (2021) provides groupings for the varying elements that we wanted to distinguish and
+compare. The three age/gender groups compared are: (1) All (men and women of all ages), (2) Men
+between ages of 18-44, and (3) Men of “mating age” (30-40), making them of an age that is most commonly
+seen as the range that people seek to find a partner and “settle down.” There were also 3 different groupings
+for categorizing a municipality’s gender ratio which are referred to as “terciles.” Gender ratio was calculated
+by dividing the male population by the female population of a given municipality (Dancygier et al. 2021).
+Within the survey data, each response had a value for that respondents’ municipality’s gender ratio. Table 1
+shows the exact value of ratio used to divide groupings into 1st, 2nd, and 3rd terciles.
+Returning to Figure 1, we immediately notice that the highest rate of perceiving refugees as threats, over
+46%, is found in mating-aged men living in municipalities with relatively high male-to-female ratio (at least
+1.12 men per 1 woman). Next is Men ages 18-44 in the same tercile of municipalities at around 37%. This is
+in stark contrast to the All group which includes men and women of all ages, where the proportion is lowest
+in the 1st tercile at around 17%, and highest at the 3rd tercile with 23%. There is one exception of Men
+30-40 in the 1st tercile, but otherwise, Men are consistently more likely to perceive refugees as threats to
+mating than the general population. This jumps greatly the higher the male-to-female ratio is in their own
+town; the rate in Men 30-40 is almost tripled in the 3rd tercile than the 1st, and about 1.8 times more than
+the 2nd.
+In analyzing Figure 1, we can recognize that the combination of a person being a man, especially between the
+ages of 30-40, and living in a municipality that has about 9 men per 8 women does seem to predict a higher
+rate of that person believing that refugees are negatively affecting their chance at finding a romantic partner.
+To confirm, it is not necessarily true that these respondents are living in an area with disproportionately
+more refugee men, but men in general. Yet, there being more men at all in their town might lead them to
+project blame onto refugees when presented with a question regarding the topic.
 
 ```{r}
-
+knitr::opts_chunk$set(echo = FALSE)
 Table_I <- data.frame(
   Job_satisfaction_T1 = c(5.64, 1.18),
   Job_satisfaction_T2 = c(5.74, 0.99),
@@ -64,7 +95,7 @@ Talk more about it.
 And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
 ```{r}
-
+knitr::opts_chunk$set(echo = FALSE)
 Table_II <- data.frame(
   Job_satisfaction = c(5.29, 1.22),
   Belief_free_will = c(5.28, 0.84)
@@ -77,8 +108,7 @@ rownames(Table_II) <- c("Mean", "Standard Deviation")
 print(Table_II)
 ```
 ```{r}
-
-# Load necessary libraries
+knitr::opts_chunk$set(echo = FALSE)
 library(ggplot2)
 library(dplyr)
 
@@ -96,7 +126,7 @@ ggplot(data, aes(x = Country, y = Value, fill = Type)) +
   scale_y_continuous(limits = c(0, 10)) +
   labs(x = "Country", y = "Scale") +
   theme_minimal() +
-  scale_fill_manual(values = c("Belief in Free Will" = "blue", "Job Satisfaction" = "red")) # Custom colors for the bars
+  scale_fill_manual(values = c("Belief in Free Will" = "blue", "Job Satisfaction" = "red")) 
 
 
 ```
@@ -104,66 +134,9 @@ Talk way more about it.
 
 
 
-# Model
 
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
-
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
-)
-```
+# Replication:
+Link of the reproduction of the paper on the social science reproduction platform :https://doi.org/10.48152/ssrp-1yg9-0z41
 
 
 
