@@ -46,9 +46,25 @@ Free will is a topic that has different meaning depending on the city or country
 
 # Results
 
-Data from Study 1 were used to show the relative amount of belief in free will of the average Taiwanese real estate agents and how much are they satisfied with their job across two times within 6 months with the same sample.
-We extracted the responses from the survey and extracted the responses to the questions : "From the scale of 0 to 10, How much do you agree with this statement: I have free will"and "From the scale of 0 to 10, How much do you agree with this statement: I am satisfied with my job" at Time one and two.
-In Figure 1, we calculated and showed the means and standard deviation of the job satisfaction both times and belief in free will values.
+Data from Study 1 were used to show the relative amount of belief in free will 
+of the average Taiwanese real estate agents and how much are they satisfied with
+their job across two times within 6 months with the same sample.
+We extracted the responses from the survey and extracted the responses to the 
+questions : "From the scale of 0 to 10, How much do you agree with this 
+statement: I have free will"and "From the scale of 0 to 10, How much do you 
+agree with this statement: I am satisfied with my job" at Time one and two.
+In Table 1, there are three values on a scale of 0 to 10 compared : 
+(1) Job Satisfaction T1, (2) Job Satisfaction T2, and (3) Belief in Free Will 
+which is only measured once since beliefs rarely vary on a relatively short time
+span.
+The rows would be the mean and standard deviation calculated using R.
+Looking at Table 1, we immediately notice that the mean score of Job 
+satisfaction barely vary from the first and second time (5.64 and 5.74 
+respectively) and that the average level of belief of free will would be 3.99. 
+In addition,the standard deviation of the three values seem reasonable.
+In analyzing Table 1, we can recognize that the slight increase in job
+satisfaction still within the standard deviation. 
+
 
 
 ```{r}
