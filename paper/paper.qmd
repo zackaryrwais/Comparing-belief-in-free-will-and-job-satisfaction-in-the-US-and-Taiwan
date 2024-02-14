@@ -49,30 +49,7 @@ Free will is a topic that has different meaning depending on the city or country
 Data from Study 1 were used to show the relative amount of belief in free will of the average Taiwanese real estate agents and how much are they satisfied with their job across two times within 6 months with the same sample.
 We extracted the responses from the survey and extracted the responses to the questions : "From the scale of 0 to 10, How much do you agree with this statement: I have free will"and "From the scale of 0 to 10, How much do you agree with this statement: I am satisfied with my job" at Time one and two.
 In Figure 1, we calculated and showed the means and standard deviation of the job satisfaction both times and belief in free will values.
-response patterns along a consistent y-axis.
-Dancygier et al. (2021) provides groupings for the varying elements that we wanted to distinguish and
-compare. The three age/gender groups compared are: (1) All (men and women of all ages), (2) Men
-between ages of 18-44, and (3) Men of “mating age” (30-40), making them of an age that is most commonly
-seen as the range that people seek to find a partner and “settle down.” There were also 3 different groupings
-for categorizing a municipality’s gender ratio which are referred to as “terciles.” Gender ratio was calculated
-by dividing the male population by the female population of a given municipality (Dancygier et al. 2021).
-Within the survey data, each response had a value for that respondents’ municipality’s gender ratio. Table 1
-shows the exact value of ratio used to divide groupings into 1st, 2nd, and 3rd terciles.
-Returning to Figure 1, we immediately notice that the highest rate of perceiving refugees as threats, over
-46%, is found in mating-aged men living in municipalities with relatively high male-to-female ratio (at least
-1.12 men per 1 woman). Next is Men ages 18-44 in the same tercile of municipalities at around 37%. This is
-in stark contrast to the All group which includes men and women of all ages, where the proportion is lowest
-in the 1st tercile at around 17%, and highest at the 3rd tercile with 23%. There is one exception of Men
-30-40 in the 1st tercile, but otherwise, Men are consistently more likely to perceive refugees as threats to
-mating than the general population. This jumps greatly the higher the male-to-female ratio is in their own
-town; the rate in Men 30-40 is almost tripled in the 3rd tercile than the 1st, and about 1.8 times more than
-the 2nd.
-In analyzing Figure 1, we can recognize that the combination of a person being a man, especially between the
-ages of 30-40, and living in a municipality that has about 9 men per 8 women does seem to predict a higher
-rate of that person believing that refugees are negatively affecting their chance at finding a romantic partner.
-To confirm, it is not necessarily true that these respondents are living in an area with disproportionately
-more refugee men, but men in general. Yet, there being more men at all in their town might lead them to
-project blame onto refugees when presented with a question regarding the topic.
+
 
 ```{r}
 knitr::opts_chunk$set(echo = FALSE)
