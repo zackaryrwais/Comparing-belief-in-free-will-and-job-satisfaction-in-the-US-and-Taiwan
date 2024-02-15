@@ -20,6 +20,7 @@ output-dir: "./output"
 library(tidyverse)
 library(palmerpenguins)
 library(ggplot2)
+library(knitr)
 ```
 
 
@@ -48,25 +49,25 @@ library(ggplot2)
 
 Data from Study 1 were used to show the relative amount of belief in free will 
 of the average Taiwanese real estate agents and how much are they satisfied with
-their job across two times within 6 months with the same sample.
+their job across two times within three months with the same sample.
 We extracted the responses from the survey and extracted the responses to the 
 questions : "From the scale of 0 to 10, How much do you agree with this 
 statement: I have free will"and "From the scale of 0 to 10, How much do you 
 agree with this statement: I am satisfied with my job" at Time one and two.
 In Table 1, there are three values on a scale of 0 to 10 compared : 
-(1) Job Satisfaction T1, (2) Job Satisfaction T2, and (3) Belief in Free Will 
-which is only measured once since beliefs rarely vary on a relatively short time
-span.
+(1) Job Satisfaction T1, (2) Job Satisfaction T2, and (3) Belief in Free Will.
 The rows would be the mean and standard deviation calculated using R.
 Looking at Table 1, we immediately notice that the mean score of Job 
 satisfaction barely vary from the first and second time (5.64 and 5.74 
 respectively) and that the average level of belief of free will would be 3.99. 
 In addition,the standard deviation of the three values seem reasonable.
-In analyzing Table 1, we can recognize that the slight increase in job
-satisfaction still within the standard deviation. 
+While analyzing Table 1, we can recognize that the slight increase in job
+satisfaction still largely within the standard deviation which confirms the 
+accuracy of the measurement that barely varies over the time.
 
 
-
+Table 1 : Mean and standard deviation of belief in free will and 
+job satisfaction within the Taiwanese real estate agency.
 ```{r}
 knitr::opts_chunk$set(echo = FALSE)
 Table_I <- data.frame(
@@ -83,10 +84,22 @@ print(Table_I)
 
 ```
 
-Talk more about it.
 
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+Moving to the United States, Study 2 ,conducted in 2017, asked workers available 
+on MTurk, a professional network spanning multiple professions the same 
+questions as in Study 1 :  "From the scale of 0 to 10, How much do you agree 
+with this statement: I have free will"and "From the scale of 0 to 10, How much 
+do you agree with this statement: I am satisfied with my job". The respondents'
+answers were extracted and had their average and standard deviation as given 
+in Table 2. This table compares two values on a scale of 0 to 10  : 
+(1) Job Satisfaction T1 (2) Belief in Free Will. The rows would be the mean and
+standard deviation calculated using R. Looking at Table 1, we see  that the mean
+score of Job satisfaction is 5.29 and that the average level of belief of free 
+will would be 5.28. The standard deviation of the three values seem reasonable.
 
+
+Table 2 : Mean and standard deviation of belief in free will and job
+satisfaction within Amazon Mechanical Turk American Workers.
 ```{r}
 knitr::opts_chunk$set(echo = FALSE)
 Table_II <- data.frame(
@@ -100,6 +113,13 @@ rownames(Table_II) <- c("Mean", "Standard Deviation")
 
 print(Table_II)
 ```
+
+
+
+
+Graph 1 : Bar Chart comparing the belief in free will and job
+satisfaction Mehanical Turk American Workers.
+
 ```{r}
 knitr::opts_chunk$set(echo = FALSE)
 library(ggplot2)
@@ -123,7 +143,7 @@ ggplot(data, aes(x = Country, y = Value, fill = Type)) +
 
 
 ```
-Talk way more about it. 
+
 
 
 
