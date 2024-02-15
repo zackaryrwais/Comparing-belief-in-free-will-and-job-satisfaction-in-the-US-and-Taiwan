@@ -200,6 +200,7 @@ to the different circumstances of the samples.
 Graph 1 : Bar Chart comparing the average belief in free will and job
 satisfaction between MTurk American Workers and employees in Taiwan.
 
+
 ```{r, hide_code=TRUE}
 
 library(ggplot2)
