@@ -79,7 +79,10 @@ of simplicity.
 	ideas in regards to psychological well-being and international perspectives. 
 	Our reproduction seeks to focus on two different findings made from the 
 	original paper and apply a holistic lens to it. 
-	The two claims we are focusing on are as follows: (1) Assessing the direction of the relationship between belief in free will and job satisfaction. (2) Evaluating the impact of cultural contexts on the perception of free will on indivudals throughout different professions and age groups. 
+	The two claims we are focusing on are as follows: (1) Assessing the direction 
+	of the relationship between belief in free will and job satisfaction. 
+	(2) Evaluating the impact of cultural contexts on the perception of free will
+	on indivudals throughout different professions and age groups. 
 
 ## 2.2 Methodology 
 	This paper replicates the data that was originally studied for the (2018) 
