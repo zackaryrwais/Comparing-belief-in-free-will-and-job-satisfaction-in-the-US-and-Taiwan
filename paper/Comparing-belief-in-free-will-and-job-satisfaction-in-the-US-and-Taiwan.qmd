@@ -342,10 +342,8 @@ Lavazza, Andrea, and Inglese, S. "Free Will and Neuroscience: From Explaining Fr
 Wagner, H. "Why We Have Free Will." Scientific American, 6 Jan. 2016, www.scientificamerican.com/article/why-we-have-free-will/. Accessed 14 Feb. 2024.
 
 Ghose, Tia. "Is Free Will an Illusion? Scientists, Philosophers Forced to Differ." Live Science, 3 May 2013, www.livescience.com/29100-illusion-of-free-will.html. Accessed 14 Feb. 2024.
-R Core Team. 2020. R: A Language and Environment for Statistical Computing. 
-Vienna, Austria: 
-R
-Foundation for Statistical Computing. https://www.R-project.org/.
+R Core Team. 2020. R: A Language and Environment for Statistical Computing. Vienna, Austria: R Foundation for Statistical Computing. https://www.R-project.org/.
+
 
 
 
