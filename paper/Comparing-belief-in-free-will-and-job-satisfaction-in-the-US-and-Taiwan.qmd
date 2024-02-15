@@ -105,13 +105,14 @@ of simplicity.
 	they answered questions directly related to our research. Although the total 
 	survey took into account people from over 40 countries, for our focus 
 	we looked at individuals from 16 specific countries. 
+	
 ## 2.3 Features 
 	The studies conducted each had their specific variables conducted. 
 	For the first study, the survey takes into account age, gender, social 
 	desirability of the job, job satisfaction after the first wave of surveys, job satisfaction after the second wave of surveys, and their beliefs on free will. 
 	The age range for this study was between 22 to 49 years old, and only took 
 	into account male and female genders. The second study primarily took free 
-	will and job satisfaction into account. 
+	will and job satisfaction into account.
 	
 
 
